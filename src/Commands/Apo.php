@@ -5,7 +5,7 @@ namespace Roma\Commands;
 use Roma\Traits\Command;
 use VK\Client\VKApiClient;
 
-class Yes
+class Apo
 {
     use Command;
 
@@ -23,13 +23,12 @@ class Yes
     public function call(): array
     {
         return [
-            'да рома',
-            'да рома?'
+            'апо'
         ];
     }
 
     public function main(): void
     {
-        $this->sendMessageChat('+');
+        $this->sendMessageChat('', ['photo-170419631_457239019']);
     }
 }

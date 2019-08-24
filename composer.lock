@@ -4,8 +4,63 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0d4e78cbab9f917cf8049dc6da0e00e",
+    "content-hash": "dc32374711263cba15cf22018f46601c",
     "packages": [
+        {
+            "name": "geometria-lab/rediska",
+            "version": "v0.5.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Shumkov/Rediska.git",
+                "reference": "5b33ba2f1526f9ad30864b42617e34ac370aeae0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Shumkov/Rediska/zipball/5b33ba2f1526f9ad30864b42617e34ac370aeae0",
+                "reference": "5b33ba2f1526f9ad30864b42617e34ac370aeae0",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=3.7.11",
+                "zendframework/zendframework1": ">=1.12.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Rediska": [
+                        "library/",
+                        "tests/library/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Maxim Ivanov",
+                    "email": "maximiv@gmail.com"
+                },
+                {
+                    "name": "Ryan Grenz",
+                    "email": "info@ryangrenz.com"
+                },
+                {
+                    "name": "Ivan Shumkov",
+                    "email": "ivan@shumkov.ru"
+                },
+                {
+                    "name": "Till Klampaeckel",
+                    "email": "till@php.net"
+                }
+            ],
+            "description": "Full-featured PHP client for key-value database Redis",
+            "keywords": [
+                "cache",
+                "redis",
+                "sessions",
+                "zend"
+            ],
+            "time": "2014-08-12T15:02:35+00:00"
+        },
         {
             "name": "vkcom/vk-php-sdk",
             "version": "5.101.0",
@@ -52,6 +107,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-mbstring": "*"
+    },
     "platform-dev": []
 }

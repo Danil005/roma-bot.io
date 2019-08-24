@@ -13,7 +13,7 @@ class CommandsController
         $files = scandir(self::$dir, 0);
         for($i = 2; $i < count($files); $i++) {
             if( $files[$i] != 'CommandsController.php' ) {
-                $class = (string) explode('.', $files[$i])[0];
+                $class = 'Roma\Commands\\' . (string) explode('.', $files[$i])[0];
                 (new $class($object))->execute();
             }
         }

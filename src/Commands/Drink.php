@@ -5,7 +5,7 @@ namespace Roma\Commands;
 use Roma\Traits\Command;
 use VK\Client\VKApiClient;
 
-class Yes
+class Drink
 {
     use Command;
 
@@ -23,13 +23,13 @@ class Yes
     public function call(): array
     {
         return [
-            'да рома',
-            'да рома?'
+            'рома выпьем',
+            'рома выпьем?'
         ];
     }
 
     public function main(): void
     {
-        $this->sendMessageChat('+');
+        $this->sendMessageChat('Уууух... Пивка для рывка!', ['photo-170419631_457239018']);
     }
 }
